@@ -327,19 +327,22 @@ body {
 
 /*** About Section ***/
 #about { 
-	display: flex;
-	min-height: 100vh;
+	height: 900px;
 }
 
-#about .wrapper {
+/*#about .wrapper {
 	max-width: 80%;
 	margin: auto;
 	margin-right: 10%
-}
+}*/
 @media (min-width: 768px) {
 	#about .wrapper {
 		margin-right: 24%;
 	}
+}
+
+.melo {
+	margin-left: 50%;
 }
 
 .about__intro {
@@ -347,7 +350,7 @@ body {
 	padding-left: 2.2em;
 	margin-bottom: 1em;
 	max-width: 25em;
-}
+}*/
 
 #about:hover .global-button.rotated::before {
 	animation: move_arrow_v 2500ms ease-in infinite forwards;
@@ -614,4 +617,24 @@ footer > #credit {
 
 .credit-link:hover {
   color: #51e6a6;
+}
+
+@media (max-width: 575px){
+	.melo{
+		margin:20px;
+	}
+
+	#about{
+		padding-top:3.5em;
+	}
+
+	.about__intro{
+		padding-left: 1.2em;
+	}
+}
+
+@media (max-width: 991px){
+	.melo{
+		margin:20px;
+	}
 }
